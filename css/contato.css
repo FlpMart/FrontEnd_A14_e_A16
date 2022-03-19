@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Open+Sans:wght@400;700&family=Oswald:wght@300;400;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.discount {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    padding-left: 20px;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+
+    background: #1CD1B0;
+}
+
+.discount span {
+    font-family: 'Roboto';
+}
+
+.background--header {
+    position: absolute;
+    width: 100%;
+    height: 11%;
+    left: 0px;
+    top: 5%;
+    padding-left: 20px;
+
+    background: #00669F;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2%;
+}
+
+.background--header span {
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+
+    color: white;
+}
+
+.nav {
+    position: absolute;
+    width: 100%;
+    height: 6%;
+    left: 0px;
+    top: 16%;
+
+    background: #001D2D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20%;
+
+    padding-right: 3%;
+
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto';
+}
+
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    position: absolute;
+    top: 30%;
+    width: 50%;
+    height: 85%;
+
+    background-color: #D3D3D3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}   
+
+.form {
+    width: 80%;
+    height: 60%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.form textarea {
+    resize: none;
+    height: 40%;
+}
+
+.container h2 {
+    margin-top: 4%;
+
+    font-family: Inter;
+    font-size: 3em;
+    color: #333333;
+}
+
+.input {
+    height: 20%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.optgroup {
+    margin-top: 4%;
+    height: 20%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn {
+    display: flex;
+    width: 80%;
+    gap: 10%;
+    height: 10%;
+}
+
+.registrar--btn {
+    width: 60%;
+    height: 100%;
+    background: #1CD1B0;
+
+    font-size: 1.5em;
+    font-family: 'Roboto';
+    font-weight: 400;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
+}
+
+.limpar--btn {
+    width: 60%;
+    height: 100%;
+    background: #888888;
+
+    font-size: 1.5em;
+    font-family: 'Roboto';
+    color: white;
+    font-weight: 400;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.limpar--btn span {
+   align-self: center;
+}
+
+.section--registro {
+    margin-bottom: 2%;
+    font-family: 'roboto';
+}
+
+.section--registro a {
+    text-decoration: none;
+}
+
+
+
+
+/* Footer */
+
+.background--footer {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    left: 0;
+    top: 130%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background: #00669F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.background--footer span {
+    font-family: 'roboto';
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* Smaller Smartphones */
+
+@media (min-width: 0) and (max-width: 480px) {
+
+    /* Header */
+
+    .discount {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .background--header {
+        padding-left: 0;
+        height: 15%;
+        justify-content: center;
+    }
+
+    .nav {
+        top: 20%;
+        justify-content: center;
+    }
+
+    .nav ul {
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    /* Main */
+
+    .container {
+        width: 90%;
+    }
+}
+
+/* Tablets e Larger Smartphones */
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    /* Header */
+
+    .discount {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .background--header {
+        padding-left: 0;
+        height: 15%;
+        justify-content: center;
+    }
+
+    .nav {
+        top: 20%;
+        justify-content: center;
+    }
+
+    .nav ul {
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    /* Main */
+
+    .container {
+        width: 90%;
+    }
+}
+
+/* Laptops, larger tablets in landscape and small desktops */
+
+@media (min-width: 769px) and (max-width: 1279px) {
+
+    /* Header */
+
+    .discount {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .background--header {
+        padding-left: 0;
+        height: 15%;
+        justify-content: center;
+    }
+
+    .nav {
+        top: 20%;
+        justify-content: center;
+    }
+
+    .nav ul {
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    /* Main */
+
+    .container {
+        width: 70%;
+    }
+
+}

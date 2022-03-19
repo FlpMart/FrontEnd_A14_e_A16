@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@300;400;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.discount {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    padding-left: 20px;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+
+    background: #1CD1B0;
+}
+
+.discount span {
+    font-family: 'Roboto';
+}
+
+.background--header {
+    position: absolute;
+    width: 100%;
+    height: 11%;
+    left: 0px;
+    top: 5%;
+    padding-left: 20px;
+
+    background: #00669F;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2%;
+}
+
+.background--header span {
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+
+    color: white;
+}
+
+.background--header a {
+    text-decoration: none;
+}
+
+.nav {
+    position: absolute;
+    width: 100%;
+    height: 6%;
+    left: 0px;
+    top: 16%;
+
+    background: #001D2D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20%;
+
+    padding-right: 3%;
+
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto';
+}
+
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main--background {
+    width: 100%;
+    position: absolute;
+    top: 22%;
+}
+
+.container {
+    position: absolute;
+    top: 30%;
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.icon {
+    position: absolute;
+    top: 7%;
+
+    width: 120px;
+    height: 118px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.card {
+    width: 546px;
+    height: 456px;
+
+    align-self: center;
+
+    background: #F3F3F3;
+    border-radius: 45px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heart {
+    position: absolute;
+    margin-top: 5%;
+    padding-left: 2%;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: relative;
+    top: 10%;
+
+    width: 90%;
+    height: 43%;
+
+    align-self: center;
+}
+
+.infos h2 {
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #2C0187;
+
+    align-self: center;
+}
+
+.infos p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    text-align: center;
+}
+
+.icons {
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    
+    width: 60%;
+    position: relative;
+    top: 5%;
+}
+
+
+.infos p span {
+    color: #2C0187;;
+}
+
+.card-footer {
+    width: 546px;
+    height: 87px;
+
+    background: #2C0187;
+    border-radius: 0px 0px 45px 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+
+    position: relative;
+}
+
+.card-footer a {
+    text-decoration: none;
+}
+
+.card--footer--text {
+    font-family: 'Roboto';
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+/* Footer */
+
+.background--footer {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    left: 0;
+    top: 133%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background: #00669F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.background--footer span {
+    font-family: 'roboto';
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Smaller Smartphones */
+
+@media (min-width: 0) and (max-width: 480px) {
+
+}
+
+/* Tablets e Larger Smartphones */
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/* Laptops, larger tablets in landscape and small desktops */
+
+@media (min-width: 769px) and (max-width: 1279px) {
+
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@300;400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/registro.css" class="css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="discount">
+
+        <span>Descontos de 20%</span>
+
+    </div>
+
+    <header class="background--header">
+
+        <a href="index.html"><img src="img/Logo.png" alt="Logo da Página" class="logo"></a>
+
+        <span>Nome da Loja</span>
+
+    </header>
+
+    <div class="nav">
+
+        <ul>
+            <li> <a href="detail.html">Detail</a> </li>
+            <li> <a href="contato.html">Contato</a> </li>
+            <li> <a href="registro.html">Registro</a> </li>
+            <li> <a href="login.html">Login</a> </li>
+        </ul>
+
+    </div>
+
+    <main>
+
+        <section class="container">
+
+            <h2>Registro</h2>
+
+            <div class="form">
+
+                <label for="nome"></label>
+                <input class="input" type="text" name="nome" id="nome" placeholder="Nome e Sobrenome" required>
+
+                <label for="email"></label>
+                <input class="input" type="email" name="email" id="email" placeholder="Email" required>
+
+                <label for="password"></label>
+                <input class="input" type="password" name="password" id="password" placeholder="Senha" required>
+
+                    <select class="optgroup" name="country" id="country">
+                        <optgroup label="País">
+                            <option value="brasil">Brasil</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="eua">EUA</option>
+                            <option value="finland">Finlândia</option>
+                        </optgroup>
+                    </select>    
+
+            </div>
+
+            <section class="btn">
+                
+                    <input class="registrar--btn" type="submit" value="Registrar">
+                
+                    <input class="limpar--btn" type="reset" value="Limpar">
+
+            </section>
+
+            <span class="section--registro">Já possui uma conta? <a href="login.html">Entrar</a></span>
+
+        </section>   
+
+    </main>
+
+    <footer class="background--footer">
+
+        <span>Todos os direitos reservados a FRONT END 1</span>
+
+    </footer>
+
+
+</body>
+</html>
